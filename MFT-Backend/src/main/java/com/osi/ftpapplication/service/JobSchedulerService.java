@@ -81,7 +81,7 @@ public class JobSchedulerService {
 		jobSchedulerRepository.deleteById(id);
 		return null;
 	}
-
+// ThreadPoolTaskScheduler and CronTrigger for running scheduled tasks on specific time.
 	@PostConstruct
 	public String startSchedulers() {
 		ThreadPoolTaskScheduler tpts = new ThreadPoolTaskScheduler();
